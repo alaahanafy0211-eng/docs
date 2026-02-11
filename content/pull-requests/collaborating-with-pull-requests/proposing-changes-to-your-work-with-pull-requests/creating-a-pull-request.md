@@ -1,50 +1,50 @@
 ---
-title: Creating a pull request
-intro: 'Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a *branch*, which ensures that the default branch only contains finished and approved work.'
-permissions: 'Anyone with read access to a repository can create a pull request. {% data reusables.enterprise-accounts.emu-permission-propose %}'
-redirect_from:
-  - /github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
-  - /articles/creating-a-pull-request
-  - /github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
-versions:
-  fpt: '*'
-  ghes: '*'
-  ghec: '*'
-topics:
-  - Pull requests
+العنوان: إنشاء طلب سحب
+مقدمة: "إنشاء طلب سحب لاقتراح التغييرات في مستودع والتعاون بشأنها. وتقترح هذه التغييرات في... *فرع.*مما يضمن أن الفرع الافتراضي يحتوي فقط على عمل مكتمل ومعتمد. "
+الأذونات: "يمكن لأي شخص لديه حق الوصول إلى مستودع إنشاء طلب سحب.{% data reusables.enterprise-accounts.emu-permission-propose%}"
+redirect_من:
+  -           /Github/التعاون مع القضايا والسحب الطلبات/اقتراح التغييرات في عملك مع طلبات السحب/إنشاء طلب سحب.         
+  -           /المقالات/إنشاء-طلب سحب.         
+  -             /Github/التعاون مع القضايا وطلبات السحب/إنشاء طلب سحب.           
+الإصدارات:
+ FPT: " ghes: "*"*'
+ ghes: '*'
+ ghes: ' *
+المواضيع:
+  -          سحب الطلبات.        
 ---
 
-If you want to create a new branch for your pull request and do not have write permissions to the repository, you can fork the repository first. For more information, see [AUTOTITLE](/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) and [AUTOTITLE](/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks).
+    إذا كنت ترغب في إنشاء فرع جديد لطلب السحب الخاص بك وليس لديك أذونات الكتابة إلى المستودع، يمكنك شوكة المستودع أولاً. لمزيد من المعلومات، انظر.      [العنوان الذاتي.]   (/سحب الطلبات / التعاون مع طلبات السحب / اقتراح التغييرات في عملك مع طلبات السحب / إنشاء طلب سحب من شوكة.) و...     [العنوان الذاتي.](/سحب-طلبات/التعاون مع-سحب-طلبات/العمل مع الشوك/حول الشوك.).
 
-You can specify which branch you'd like to merge your changes into when you create your pull request. Pull requests can only be opened between two branches that are different.
+يمكنك تحديد الفرع الذي ترغب في دمج التغييرات فيه عند إنشاء طلب السحب. لا يمكن فتح طلبات السحب إلا بين فرعين مختلفين.
 
-{% data reusables.pull_requests.perms-to-open-pull-request %}
+{% البيانات reusables.pull_requests.perms-to-open-pull-request%}
 
-{% data reusables.pull_requests.close-issues-using-keywords %}
+العنوان: إنشاء طلب سحب
 
-## Changing the branch range and destination repository
+##        تغيير نطاق الفروع ومستودع الوجهة.      
 
-By default, pull requests are based on the parent repository's default branch. For more information, see [AUTOTITLE](/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches#about-the-default-branch).
+   بشكل افتراضي، تستند طلبات السحب إلى الفرع الافتراضي للمستودع الأم. لمزيد من المعلومات، انظر.     [العنوان الذاتي.](/سحب-طلبات/التعاون مع-سحب-طلبات/اقتراح-التغييرات-لعملك-مع-سحب-طلبات/حول-فروع#حول-الفرع الافتراضي-الفرع).
 
-If the default parent repository isn't correct, you can change both the parent repository and the branch with the drop-down lists. You can also swap your head and base branches with the drop-down lists to establish diffs between reference points. References here must be branch names in your GitHub repository.
+إذا لم يكن مستودع الوالدين الافتراضي صحيحًا، فيمكنك تغيير كل من المستودع الأم والفرع باستخدام القوائم المنسدلة. يمكنك أيضًا تبديل رأسك وفروعك الأساسية بالقوائم المنسدلة لإنشاء خلافات بين النقاط المرجعية. يجب أن تكون المراجع هنا أسماء فروع في مستودع GitHub الخاص بك.
 
-![Screenshot of a pull request. The dropdown to edit the compare branch is expanded.](/assets/images/help/pull_requests/pull-request-review-edit-branch.png)
+     /Github/التعاون مع القضايا وطلبات السحب/إنشاء طلب سحب.   
 
-When thinking about branches, remember that the _base branch_ is **where** changes should be applied, the _head branch_ contains **what** you would like to be applied.
+  العنوان: إنشاء طلب سحب_base branch_ is    **أين؟**   يجب تطبيق التغييرات، و   _رئيس الفرع._   يحتوي على...   **ماذا؟!**   كنت ترغب في أن تطبق. 
 
-When you change the base repository, you also change notifications for the pull request. Everyone that can push to the base repository will receive an email notification and see the new pull request in their dashboard the next time they sign in.
+---
 
-When you change any of the information in the branch range, the Commit and Files changed preview areas will update to show your new range.
+العنوان: إنشاء طلب سحب
 
-> [!TIP]
-> * Using the compare view, you can set up comparisons across any timeframe. For more information, see [AUTOTITLE](/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits/comparing-commits).
-> * Project maintainers can add a pull request template for a repository. Templates include prompts for information in the body of a pull request. For more information, see [AUTOTITLE](/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates).
+يمكنك تحديد الفرع الذي ترغب في دمج التغييرات فيه عند إنشاء طلب السحب. لا يمكن فتح طلبات السحب إلا بين فرعين مختلفين.[!TIP]
+(/سحب-طلبات/التعاون مع-سحب-طلبات/العمل مع الشوك/حول الشوك.). * Using the compare view, you can set up comparisons across any timeframe. For more information, see [AUTOTITLE](/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits/comparing-commits).
+> * Project maintainers can add a pull request template for a repository. Templates include prompts for information in the body of a pull request. For more information, see [Autotitle.](/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates).
 
 ## Creating the pull request
 
-{% webui %}
+(/سحب-طلبات/التعاون مع-سحب-طلبات/اقتراح-التغييرات-لعملك-مع-سحب-طلبات/حول-فروع#حول-الفرع الافتراضي-الفرع).
 
-{% data reusables.repositories.navigate-to-repo %}
+(/سحب-طلبات/التعاون مع-سحب-طلبات/اقتراح-التغييرات-لعملك-مع-سحب-طلبات/حول-فروع#حول-الفرع الافتراضي-الفرع).
 1. In the "Branch" menu, choose the branch that contains your commits.
 
    ![Screenshot of the branch dropdown menu on the main page of a repository.](/assets/images/help/pull_requests/branch-dropdown.png)
